@@ -141,3 +141,10 @@ html {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
+
+.neu.btn.btn-primary {
+  border-radius: 50%;
+  background: linear-gradient(145deg, #428aea, #3874c5);
+  border: 0;
+  box-shadow: 4px 4px 8px #3772c1, -4px -4px 8px #4590f5 !important;
+}

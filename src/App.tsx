@@ -42,11 +42,11 @@ function App() {
                 </div>
                 <div>
                   <ul className="d-flex list-unstyled mb-5 mb-lg-0">
-                    <li className="mr-2">
+                    <li className="mr-3">
                       <a
                         href="https://api.whatsapp.com/send?phone=919928423569&text=Hi,%20I%20found%20you%20through%20github%20and%20would%20like%20to%20connect%20yo%20you!"
                         target="_blank"
-                        className="btn btn-icon-only btn-pill btn-primary"
+                        className="btn btn-icon-only btn-pill btn-primary neu"
                         aria-label="twitter social link"
                         data-toggle="tooltip"
                         data-placement="top"
@@ -59,11 +59,11 @@ function App() {
                         ></span>
                       </a>
                     </li>
-                    <li className="mr-2">
+                    <li className="mr-3">
                       <a
                         href="https://www.facebook.com/abhayonfacebuk/"
                         target="_blank"
-                        className="btn btn-icon-only btn-pill btn-primary"
+                        className="btn btn-icon-only btn-pill btn-primary neu"
                         aria-label="facebook social link"
                         data-toggle="tooltip"
                         data-placement="top"
@@ -76,11 +76,11 @@ function App() {
                         ></span>
                       </a>
                     </li>
-                    <li className="mr-2">
+                    <li className="mr-3">
                       <a
                         href="https://github.com/skylarkgit"
                         target="_blank"
-                        className="btn btn-icon-only btn-pill btn-primary"
+                        className="btn btn-icon-only btn-pill btn-primary neu"
                         aria-label="github social link"
                         data-toggle="tooltip"
                         data-placement="top"
@@ -97,7 +97,7 @@ function App() {
                       <a
                         href="mailto:abhay199658@gmail.com"
                         target="_blank"
-                        className="btn btn-icon-only btn-pill btn-primary"
+                        className="btn btn-icon-only btn-pill btn-primary neu"
                         aria-label="email"
                         data-toggle="tooltip"
                         data-placement="top"
