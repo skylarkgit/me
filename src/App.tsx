@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import avatar from './img/avatar.svg';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import * as Scroll from 'react-scroll';
 
 function App() {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="container-fluid">
       <div className="jumbotron banner">
@@ -113,7 +122,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div id="scroll-down" className="scroll-down">
+          <div onClick={() => Scroll.animateScroll.scrollMore(window.innerHeight)} className="scroll-down">
             <span></span>
             <span></span>
             <span></span>
