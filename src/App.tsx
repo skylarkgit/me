@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import avatar from './img/avatar.svg';
-import AOS from 'aos';
+import avatar from "./img/avatar.svg";
+import AOS from "aos";
 import "aos/dist/aos.css";
-import * as Scroll from 'react-scroll';
+import * as Scroll from "react-scroll";
+import ScrollIcon from "./components/ScrollIcon/ScrollIcon";
 
 function App() {
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -46,7 +46,7 @@ function App() {
                       <a
                         href="https://api.whatsapp.com/send?phone=919928423569&text=Hi,%20I%20found%20you%20through%20github%20and%20would%20like%20to%20connect%20yo%20you!"
                         target="_blank"
-                        className="btn btn-icon-only btn-pill btn-primary neu"
+                        className="btn btn-icon-only btn-pill btn-primary neu-2 circle"
                         aria-label="twitter social link"
                         data-toggle="tooltip"
                         data-placement="top"
@@ -63,7 +63,7 @@ function App() {
                       <a
                         href="https://www.facebook.com/abhayonfacebuk/"
                         target="_blank"
-                        className="btn btn-icon-only btn-pill btn-primary neu"
+                        className="btn btn-icon-only btn-pill btn-primary neu-2 circle"
                         aria-label="facebook social link"
                         data-toggle="tooltip"
                         data-placement="top"
@@ -80,7 +80,7 @@ function App() {
                       <a
                         href="https://github.com/skylarkgit"
                         target="_blank"
-                        className="btn btn-icon-only btn-pill btn-primary neu"
+                        className="btn btn-icon-only btn-pill btn-primary neu-2 circle"
                         aria-label="github social link"
                         data-toggle="tooltip"
                         data-placement="top"
@@ -97,7 +97,7 @@ function App() {
                       <a
                         href="mailto:abhay199658@gmail.com"
                         target="_blank"
-                        className="btn btn-icon-only btn-pill btn-primary neu"
+                        className="btn btn-icon-only btn-pill btn-primary neu-2 circle"
                         aria-label="email"
                         data-toggle="tooltip"
                         data-placement="top"
@@ -117,16 +117,12 @@ function App() {
             </div>
 
             <div className="col-12 col-md-4">
-              <div className="my-image">
+              <div className="my-image auto-center neu-7 circle">
                 <img src={avatar} />
               </div>
             </div>
           </div>
-          <div onClick={() => Scroll.animateScroll.scrollMore(window.innerHeight)} className="scroll-down">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <ScrollIcon></ScrollIcon>
         </div>
       </div>
 
