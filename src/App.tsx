@@ -3,8 +3,8 @@ import "./App.css";
 import avatar from "./img/avatar.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import * as Scroll from "react-scroll";
 import ScrollIcon from "./components/ScrollIcon/ScrollIcon";
+import Experience from "./components/Experiences/Experience";
 
 function App() {
   useEffect(() => {
@@ -13,8 +13,8 @@ function App() {
   }, []);
 
   return (
-    <div className="container-fluid">
-      <div className="jumbotron banner">
+    <div className="container-fluid snap-container no-scroller">
+      <div className="jumbotron banner snap-item">
         <div className="container">
           <div className="auto-center row py-5">
             <div className="col-12 col-md-8">
@@ -29,6 +29,7 @@ function App() {
                   <a
                     href="https://docs.google.com/document/d/184FDmrJykz8kBJxL-Oj4L2LwMrFt9yQVxXQzBDcUaAY/export?format=pdf"
                     target="_blank"
+                    rel="noreferrer"
                     className="btn btn-primary mb-3 mb-lg-0 mr-3"
                   >
                     <i className="fas fa-cloud-download-alt mr-2"></i> Resume
@@ -46,6 +47,7 @@ function App() {
                       <a
                         href="https://api.whatsapp.com/send?phone=919928423569&text=Hi,%20I%20found%20you%20through%20github%20and%20would%20like%20to%20connect%20yo%20you!"
                         target="_blank"
+                        rel="noreferrer"
                         className="btn btn-icon-only btn-pill btn-primary neu-2 circle"
                         aria-label="twitter social link"
                         data-toggle="tooltip"
@@ -63,6 +65,7 @@ function App() {
                       <a
                         href="https://www.facebook.com/abhayonfacebuk/"
                         target="_blank"
+                        rel="noreferrer"
                         className="btn btn-icon-only btn-pill btn-primary neu-2 circle"
                         aria-label="facebook social link"
                         data-toggle="tooltip"
@@ -80,6 +83,7 @@ function App() {
                       <a
                         href="https://github.com/skylarkgit"
                         target="_blank"
+                        rel="noreferrer"
                         className="btn btn-icon-only btn-pill btn-primary neu-2 circle"
                         aria-label="github social link"
                         data-toggle="tooltip"
@@ -97,6 +101,7 @@ function App() {
                       <a
                         href="mailto:abhay199658@gmail.com"
                         target="_blank"
+                        rel="noreferrer"
                         className="btn btn-icon-only btn-pill btn-primary neu-2 circle"
                         aria-label="email"
                         data-toggle="tooltip"
@@ -118,7 +123,7 @@ function App() {
 
             <div className="col-12 col-md-4">
               <div className="my-image auto-center neu-7 circle">
-                <img src={avatar} />
+                <img alt="skylark" src={avatar} />
               </div>
             </div>
           </div>
@@ -126,33 +131,11 @@ function App() {
         </div>
       </div>
 
-      <div className="section">
-        <div className="container">
-          <h1 className="section-title">EXPERIENCE</h1>
-          <div className="section-body">
-            <div className="section-item">
-              <h1>
-                Software Engineer @ <i>Metacube Softwares</i>
-              </h1>
-              <h2>July 2018 - Present</h2>
-              <p>
-                Software and system design from scratch. Set up and manage
-                project deployments. Full-stack development from the database
-                layer to user interfaces. Automated the entity generation
-                process from database scripts. Web scraping to migrate data to a
-                new software system
-              </p>
-              <div>
-                <button className="btn btn-primary mb-3 mb-lg-0 mr-3">
-                  <i className="fa fa-info mr-2"></i> Know More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="section snap-item">
+        <Experience></Experience>
       </div>
 
-      <div className="section">
+      <div className="section snap-item">
         <div className="container">
           <h1 className="section-title">Projects</h1>
           <div className="section-body">

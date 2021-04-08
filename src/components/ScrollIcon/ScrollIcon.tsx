@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { animateScroll } from "react-scroll";
 import "./ScrollIcon.css";
 
