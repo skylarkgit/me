@@ -5,6 +5,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollIcon from "./components/ScrollIcon/ScrollIcon";
 import Experience from "./components/Experiences/Experience";
+import Project from "./components/Projects/Project";
+import Education from "./components/Education/Education";
+import Skill from "./components/Skills/Skill";
 
 function App() {
   useEffect(() => {
@@ -136,174 +139,15 @@ function App() {
       </div>
 
       <div className="section snap-item">
-        <div className="container">
-          <h1 className="section-title">Projects</h1>
-          <div className="section-body">
-            <div className="section-item">
-              <h1>Academy</h1>
-              <h2>Angular, Spring Boot, Hibernate</h2>
-              <p>
-                This application deals with the learning and development of the
-                employees/users of an organization. It includes features to
-                create goals, opt a goal, track progress, mentorship, goal
-                evaluation, and plan learning programs.
-              </p>
-
-              <div>
-                <button className="btn btn-primary mb-3 mb-lg-0 mr-3">
-                  <i className="fa fa-info mr-2"></i> Know More
-                </button>
-              </div>
-            </div>
-
-            <div className="section-item">
-              <h1>BioCluster</h1>
-              <h2>C++, Bash, Matlab, Java</h2>
-              <p>
-                BioCluster is a general-purpose distributed computing platform
-                in order to optimize and boost the bio info jobs. It aims to
-                distribute jobs onto several nodes to share the workload among
-                multiple machines.
-              </p>
-
-              <div>
-                <button className="btn btn-primary mb-3 mb-lg-0 mr-3">
-                  <i className="fa fa-info mr-2"></i> Know More
-                </button>
-              </div>
-            </div>
-
-            <div className="section-item">
-              <h1>sql2java</h1>
-              <h2>python</h2>
-              <p>
-                A part of software development is to make the entities according
-                to the database design and do the mapping. This tool with a few
-                annotations can create mapped entities in JPA with optional DAO
-                and repository layer.
-              </p>
-
-              <div>
-                <button className="btn btn-primary mb-3 mb-lg-0 mr-3">
-                  <i className="fa fa-info mr-2"></i> Know More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Project></Project>
       </div>
 
-      <div className="row">
-        <div className="col-12 col-md-9">
-          <div className="row p-2">
-            <div className="col-12">
-              <div className="card glassy" data-aos="zoom-in-up">
-                <div className="card-body"></div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row p-2">
-            <div className="col-12">
-              <div id="projects" className="card glassy" data-aos="zoom-in-up">
-                <div className="card-body">
-                  <h1 className="section-title">PROJECTS</h1>
-                  <div className="section-item">
-                    <h2>
-                      Academy &mdash; <em>Angular, Spring Boot, Hibernate</em>
-                    </h2>
-                    <p>
-                      This application deals with the learning and development
-                      of the employees/users of an organization. It includes
-                      features to create goals, opt a goal, track progress,
-                      mentorship, goal evaluation, and plan learning programs.
-                    </p>
-                  </div>
-                  <div className="section-item">
-                    <h2>
-                      BioCluster &mdash; <em>C++, Bash, Matlab, Java</em>
-                    </h2>
-                    <p>
-                      BioCluster is a general-purpose distributed computing
-                      platform in order to optimize and boost the bio info jobs.
-                      It aims to distribute jobs onto several nodes to share the
-                      workload among multiple machines.
-                    </p>
-                  </div>
-
-                  <div className="section-item">
-                    <h2>
-                      sql2java &mdash; <em>python</em>
-                    </h2>
-                    <p>
-                      A part of software development is to make the entities
-                      according to the database design and do the mapping. This
-                      tool with a few annotations can create mapped entities in
-                      JPA with optional DAO and repository layer.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row p-2">
-            <div className="col-12">
-              <div className="card glassy" data-aos="zoom-in-up">
-                <div className="card-body">
-                  <h1 className="section-title">EDUCATION</h1>
-                  <div className="section-item">
-                    <h2>
-                      Rajasthan Technical University &mdash;
-                      <em>B. Tech Computer Science</em>
-                    </h2>
-                    <h3>July 2014 - May 2018</h3>
-                    <p>
-                      Linux/Unix Programming, C++ Programming, Website
-                      Development, Relational Database Design &amp; SQL, Data
-                      Engineering, Operating Systems Architecture, Cloud
-                      Computing.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-12 col-md-3">
-          <div className="card glassy" data-aos="zoom-in-up">
-            <div className="card-body">
-              <h1 className="section-title">SKILLS</h1>
-              <ul className="list-group">
-                <li className="list-group-item">
-                  Languages: Java, Javascript, C++, Python, Matlab
-                </li>
-                <li className="list-group-item">
-                  Frameworks: Angular, Spring Boot, React, React Native
-                </li>
-                <li className="list-group-item">Platforms: Heroku, AWS</li>
-                <li className="list-group-item">Misc: Node</li>
-              </ul>
-
-              <h1 className="section-title">ACHIEVEMENTS</h1>
-
-              <p>Made two publications in high-performance computing.</p>
-
-              <h1 className="section-title">PASSION PROJECTS</h1>
-              <p>
-                KeyNotes: Application to extract vocal properties of human
-                sounds and songs. Based on <em>librosa</em> and
-                <em>Spleeter</em>.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="section snap-item">
+        <Education></Education>
       </div>
-      <div className="card glassy "></div>
-      <div className="row">
-        <div className="col-9 "></div>
-        <div className="col-3 "></div>
+
+      <div className="section snap-item">
+        <Skill></Skill>
       </div>
     </div>
   );
